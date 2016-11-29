@@ -7,10 +7,15 @@
     <title>Angular Application</title>
 </head>
 <body>
+  <div ng-app="app">
+    <div ng-controller="MainController">
+      Hello, my name is {{ contact.name }}. You can reach me via email {{ contact.email }} or by phone {{ contact.phone }}.
+    </div>
+  </div>
 
-    <script src="js/angular.js"></script>
-    <script src="js/app/app.js"></script>
-    <script src="js/app/controllers/MainController.js"></script>
+  <script src="js/angular.js"></script>
+  <script src="js/app/app.js"></script>
+  <script src="js/app/controllers/MainController.js"></script>
 
 </body>
 </html>
